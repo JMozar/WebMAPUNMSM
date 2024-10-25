@@ -1,0 +1,17 @@
+DROP DATABASE IF EXISTS mapa_back;
+CREATE DATABASE mapa_back;
+
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL,
+  `usuario` varchar(30) DEFAULT NULL,
+  `contrasena` varchar(30) DEFAULT NULL
+) ;
+
+--
+-- Volcado de datos para la tabla `users`
+--
+
+INSERT INTO `users` (`id`, `usuario`, `contrasena`) VALUES
+(1, 'admin', 'admin'),
+(2, 'a', 'a'),
+(3, 'user1', '1');
